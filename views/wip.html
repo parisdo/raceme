@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600|Oswald:300,400|Dosis' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>wip</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="/css/wip.css">
+
+    <!-- Custom CSS -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+  <center>
+
+    <div id = "nav" style="width:100%; position:fixed; top:0; left:0;z-index:10000; background-color:#ffffff; padding-bottom:1.5vh; color:#364958; opacity:0.92; backdrop-filter: blur(80px); -webkit-backdrop-filter: blur(80px)">
+      <div id = "whitebar" style="width:100%; height:1vh; position:absolute; top:0; left:0; background-color:white; opacity:1"></div>
+      <div id = "whitebaropaque" style="width:0%; height:1vh; position:absolute; top:0; left:0; background-color:#3182BD; opacity:1"></div>
+      <table style="width:100%; margin-top:3vh" id="navtop">
+        <tr style="width:100%">
+          <td id = "cell1" style="width:25%">
+            <button class="link link1" id="link1">About</button>
+          </td>
+          <td id = "cell2" style="width:25%">
+            <button class="link link2" id="link2">Mental Disorders</button>
+          </td>
+          <td id = "cell3" style="width:25%">
+            <button class="link link3" id="link3">SD Demographics</button>
+          </td>
+          <td id = "cell4" style="width:25%">
+            <button class="link link4" id="link4">Visualizations</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id = "titletext" style="color:#ffffff">
+      raceME
+    </div>
+    <div id = "section1" class="section" style="width:100%; padding-top:0; color:##F1F2F3">
+      <div class = "container" style="width:40%">
+        <div id = "braincontainer" >
+          <img src="/images/brains.png" style="width:60%">
+
+        </div>
+        <div id = "abouttext">
+            RACE.ME is an interactive web application that visually displays evidence for mental health and mental health care disparities in San Diego, comparing them
+             to patterns in health. Strategies for addressing disparities in health care, such as improving access
+             to and quality of care, should also work to eliminate mental health care disparities. Our application focuses on the San Diego area, and attempts to correlate race to mental health studies.<br><br>
+
+
+            We hope that you learn something new by exploring our interactive visualizations created with D3.js. <br><br>
+             <button class = "btn continue mediumtext link2">
+               <span class="glyphicon glyphicon-chevron-down " style="color:#ffffff"></span>
+             </button>
+        </div>
+      </div>
+    </div>
+    <!--<div class = "divider" style="width:100%;background-color:#453A49; height:2vh; margin-bottom:2vh" ></div>-->
+    <div id = "otherinfo" class = "section" style="width:100%;background-color: white;padding-top:10vh;color:#52524c" >
+      <div class = "container" style="width:100%">
+                        <h1 >Approximate Percentages of Mental Disorders</h1><h3> United States</h3>
+        <table style="width:100%; ">
+          <tr style="vertical-align:baseline">
+            <td width="33%"><div id="donut" class="donut"></div>
+              <table style="width:100%;  border-radius: 5px;
+    position: relative; background: #F1F2F3; overflow: hidden; margin-top: 2%;" >
+                <tr>
+                  <td><h3 style="color: #3182BD"><center>Mood Disorders</center></h3></td>
+                </tr>
+                <tr>
+                  <td><center>Mood disorders include major depressive disorder, dysthymic disorder, and bipolar disorder. Approximately 20.9 million American adults, or about <b>9.5%</b> of the U.S.
+                    population age 18 and older in a given year, have a mood disorder.
+                    The median age of onset for mood disorders is 30 years.</center><p><br></p></td>
+                </tr>
+              </table>
+            <td width="33%"><div id="donut1" class="donut"></div>
+              <table style="width:100%;  border-radius: 5px;
+    position: relative; background: #F1F2F3; overflow: hidden; margin-top: 2%;" >
+                <tr>
+                  <td><h3 style="color: #3182BD"><center>Anxiety Disorders</center></h3></td>
+                </tr>
+                <tr>
+                  <td><center>Anxiety disorders are the most common mental illness in the U.S., affecting 40 million adults in the United States age 18 and older, or <b>18%</b> of the population.Anxiety disorders are highly treatable, yet only about one-third of those suffering receive treatment. </center><p><br></p></td>
+                </tr>
+              </table>
+            </td>
+            <td width="33%"><div id="donut2" class="donut"></div>
+              <table style="width:100%;  border-radius: 5px;
+    position: relative; background: #F1F2F3; overflow: hidden; height: 40%; margin-top: 2%;" class="round_borders">
+                <tr>
+                  <td><h3 style="color: #3182BD"><center>Schizophrenia</center></h3></td>
+                </tr>
+                <tr>
+                  <td><center>Schizophrenia is a chronic and severe neurological brain disorder estimated in 2014 to affect <b>1.1%</b> of the population or
+                    approximately 2.6 million adults in the United States aged 18 or older.
+                     An estimated 40 percent of individuals with the condition are untreated in any given year.</center><p><br></p></td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+        <button class = "btn continue mediumtext link3">
+          <span class="glyphicon glyphicon-chevron-down "></span>
+        </button>
+      </div>
+    </div>
+    <div id = "demographics" class = "section" style="width:100%;background-color:#F1F2F3;padding-top:10vh;color:#52524c" >
+      <div class = "container" style="width:100%">
+                <h1 style="margin-bottom: -1% !important;">Race Demographics</h1><h3> San Diego 2010 - 2012</h3>
+
+        <div class="chart1" style="width: 100% !important"></div>
+          <div class="chart2" style="width: 100% !important"></div>
+        <!--<button class = "btn continue mediumtext link3">
+          View some visualizations →
+        </button>-->
+      </div>
+      <button class = "btn continue link4" style="font-size:2em;color:#000000">
+        <span class="glyphicon glyphicon-chevron-down "></span>
+      </button>
+    </div>
+    <!--<div class = "divider" style="width:100%;background-color:#453A49; height:2vh; margin-top:2vh; margin-bottom:2vh" ></div>-->
+    <div id="link3info" class="section" style="background-color:#ffffff; width:100%; padding-top:0">
+      <table style="color: #52524c; position:absolute; left:0; width:150px; margin-top: 5%; padding-left: 3%;" >
+        <tr>
+          <td><h1 style="color: #52524c; padding-left: 40px;">Mental Disorders</h1></td>
+        </tr>
+        <tr>
+          <td style="margin-top: 40%;"> <h4 style="font-family: 'Open Sans Condensed', sans-serif; padding-left: 40px;">Choose a mental disorder.</h4></td>
+        </tr>
+      </table>
+      <div class="chart">
+      </div>
+
+      <div id="finalChart">
+      </div>
+      <div id = "line1" style="overflow:visible;">
+      </div>
+      <div id="expandedChart">
+      </div>
+      <div id="line2" style="overflow:visible;">
+      </div>
+      <div id="chart2">
+      </div>
+
+    </div>
+  </center>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.animate-colors-min.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/wip.js"></script>
+  <script src="js/donut.js"></script>
+  <script src="js/donut1.js"></script>
+  <script src="js/donut2.js"></script>
+  <script>
+    /*$(function(){
+      var state = 0;
+      var center1 = $('#cell1').offset().left + $('#cell1').width()/2;
+      var center2 = $('#cell2').offset().left + $('#cell2').width()/2;
+      var center3 = $('#cell3').offset().left + $('#cell3').width()/2;
+      $("#whitebaropaque").animate({ width: center1+'px' }, 500, 'swing');
+
+    	$('.link1').on('click', function(){
+        $('body').animate({ backgroundColor: '#2b255d' }, 500, 'swing');
+        $('#nav').css('display', 'block');
+        $("#whitebaropaque").animate({ width: center1+'px' }, 500, 'swing');
+        $('#section1').css('display','block');
+        $('#otherinfo').css('display','none');
+        $('#link3info').css('display','none');
+        $( "#titletext" ).fadeTo( "slow" , 1, function() {
+          $('#titletext').css('display','block');
+        });
+        state = 1;
+      });
+      $('.link2').on('click', function(){
+        $('body').animate({ backgroundColor: '#2b255d' }, 500, 'swing');
+        $('#nav').css('display', 'block');
+        $("#whitebaropaque").animate({ width: center2+'px' }, 500, 'swing');
+        $('#section1').css('display','none');
+        $('#otherinfo').css('display','block');
+        $('#link3info').css('display','none');
+        $( "#titletext" ).fadeTo( "slow" , 1, function() {
+          $('#titletext').css('display','block');
+        });
+        state = 2;
+      });
+      $('.link3').on('click', function(){
+
+        $('body').animate({ backgroundColor: '#ffffff' }, 500, 'swing');
+        $('#nav').css('display', 'none');
+        $("#whitebaropaque").animate({ width: center3+'px' }, 500, 'swing');
+        $('#section1').css('display','none');
+        $('#otherinfo').css('display','none');
+        $('#link3info').css('display','block');
+        $( "#titletext" ).fadeTo( "slow" , 0, function() {
+          $('#titletext').css('display','none');
+        });
+        state = 3;
+      });
+
+    });*/
+    $(function(){
+      var arrowpos = ($(window).width() - 930)/2 - 155;
+      $('#arrow').css({left: arrowpos});
+      var center1 = $('#cell1').offset().left + $('#cell1').width();
+      var center2 = $('#cell2').offset().left + $('#cell2').width();
+      var center3 = $('#cell3').offset().left + $('#cell3').width();
+      var center4 = $('#cell4').offset().left + $('#cell4').width();
+      $("#whitebaropaque").animate({ width: center1+'px' }, 500, 'swing');
+  		$.fn.scrollView = function () {
+  		  return this.each(function () {
+  		    $('html, body').animate({
+  		      scrollTop: $(this).offset().top
+  		    }, 500);
+  		  });
+  		}
+  		$('.link1').click(function(){
+  			$('body').scrollView();
+  		});
+      $('.link2').click(function(){
+  			$('#otherinfo').scrollView();
+  		});
+      $('.link3').click(function(){
+  			$('#demographics').scrollView();
+  		});
+      $('.link4').click(function(){
+  			$('#link3info').scrollView();
+  		});
+      $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        //console.log($('#link3info').offset().top);
+        //console.log(scroll + $('#nav').height());
+        var currentVisible = scroll + $('#nav').height();
+        /*if(scroll + $('#nav').height() > $('#otherinfo').offset().top && )
+        {
+          $('#nav').css('background-color', '#ffffff');
+          $('#nav').css('color', '#000000');
+          //$("#whitebaropaque").animate({ width: center2+'px' }, 500, 'swing');
+          $("#whitebaropaque").css('width', center2+'px');
+        }
+        else if(scroll + $('#nav').height() > $('#link3info').offset().top)
+        {
+          console.log("??");
+          $("#whitebaropaque").css('width', center3+'px');
+        }
+        else {
+          $("#whitebaropaque").css('width', center1+'px');
+        }*/
+
+        if(currentVisible < $('#otherinfo').offset().top)
+        {
+          $("#whitebaropaque").css('width', center1+'px');
+        }
+        else if(currentVisible < $('#demographics').offset().top)
+        {
+          $("#whitebaropaque").css('width', center2+'px');
+        }
+        else if(currentVisible < $('#link3info').offset().top)
+        {
+          $('#nav').css('background-color', '#FFFFFF');
+          $("#whitebaropaque").css('width', center3+'px');
+        }
+        else {
+          $('#nav').css('background-color', '#F1F2F3');
+          $("#whitebaropaque").css('width', center4+'px');
+        }
+
+        // Do something
+      });
+  	});
+
+  </script>
+</body>
+</html>

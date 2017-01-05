@@ -1,0 +1,115 @@
+body{
+  background-color: #3182BD;
+
+  margin-top:15vh;
+font-family: 'Karla', sans-serif;
+  color:#ffffff;
+  font-size:100%;
+}
+#titletext{
+font-family: 'Karla', sans-serif;
+  color:#ffffff;
+  font-size:5em;
+}
+.bigtext{
+  font-size:3em;
+}
+
+.mediumtext{
+  font-size:1.5em;
+}
+
+.continue, .continue:hover, .continue:focus, .continue:active, .continue:focus:active{
+  background:none;
+  border: 0px solid #ffffff;
+  border-radius:5px;
+  color:#000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.continueb, .continueb:hover, .continueb:focus, .continueb:active, .continueb:focus:active{
+  background:none;
+  border: 2px solid #000000;
+  border-radius:5px;
+  color:#000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#navtop td{
+  text-align:center;
+  font-size:1.5em;
+  font-weight: 400;
+  color: #52524c;
+}
+#abouttext, #otherinfo{
+  font-size:1.5em;
+  font-family: 'Karla', sans-serif;
+}
+button.link {
+  background:none;
+  border:none;
+  font-size:1em;
+  font-family: 'Karla', sans-serif;
+  font-weight:300;
+  display: inline-block;
+  position:relative;
+  padding-bottom:2px;
+}
+button.link:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+button.link:hover:after {
+	width: 100%;
+	background: #000000;
+}
+#otherinfo td {
+  font-size:1em;
+  padding:1.8%;
+}
+.section{
+  padding:10vh 0 7vh 0;
+}
+#nav{
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+#whitebaropaque{
+  transition: width 0.5s ease;
+}
+
+.donut{
+  text-align: center;
+}
+
+/*********** STACKED BAR CHART ***********/
+
+.axis path,
+.axis line{
+  fill: none;
+  stroke: black;
+}
+
+.line{
+  fill: none;
+  stroke: blue;
+  stroke-width: 2px;
+}
+
+.tick text{
+  font-size: 12px;
+}
+
+.tick line{
+  opacity: 0.2;
+}
+
+h1 {
+  margin-bottom: 0% !important;
+}
