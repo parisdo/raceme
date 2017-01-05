@@ -35,6 +35,5 @@ jspm_packages
 
 # additional
 .DS_Store
-.env
 dbpath
 log
